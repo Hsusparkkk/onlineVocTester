@@ -94,7 +94,7 @@ ikFun =()=>{
         }
         setTimeout(()=>{console.log("timeout")
         if(parseInt(questionList.length)>1){
-        questionList.splice(questionList.indexOf(orig,1))
+        questionList.splice(questionList.indexOf(orig),1)
         ques.innerHTML = questionList[0]
         socreNum.innerHTML = questionList.length
         }else{
@@ -108,11 +108,11 @@ ikFun =()=>{
 }
 idkFun = ()=>{
     
-    if(ansList[ques.innerHTML]!= undefined){
+    if(ansList[ques.innerHTML]!== undefined){
         failVoc.innerHTML+= ques.innerHTML+" "+ansList[ques.innerHTML]+"\n"
         }
     if(parseInt(questionList.length)>1){
-        questionList.splice(questionList.indexOf(ques.innerHTML,1))
+        questionList.splice(questionList.indexOf(ques.innerHTML),1)
         ques.innerHTML = questionList[0]
         socreNum.innerHTML = questionList.length
         }else{
