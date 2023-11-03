@@ -12,9 +12,6 @@ button{
     padding: 3px;
     margin: .3vw;
     user-select: none;
-    -webkit-appearance: none;  /* Safari 和 Chrome，常用於iOS下移除內建樣式 */
-    -moz-appearance: none;     /* FireFox */
-    appearance: none;
     cursor:pointer;
 }
 
@@ -62,6 +59,7 @@ button{
 }
 #score::before{
     content:"===Remaining vocabulary===";
+    font-size: 7vmin;
     font-weight: 900;
     color:#3b7869
 }

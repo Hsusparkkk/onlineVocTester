@@ -54,6 +54,7 @@ function getObj(){
     for(let i = 0;i<=letterList.indexOf(letterRange);i++){
         let temp = jsonObjGet["voc"+letterList[i]]
         questionList = questionList.concat(temp)
+        // console.log("temp = "+temp+", ql = "+questionList)
     }
     ansList = jsonObjGet["answer"]
     // console.log(jsonObjGet["answer"])
@@ -88,6 +89,7 @@ function testEnd(){
 }
 // idk and ik button function definition============================================
 function ikFun(){
+    // this.disabled = true
         let orig = ques.innerHTML
         if(ansList[ques.innerHTML]!= undefined){
         ques.innerHTML += " "+ansList[ques.innerHTML]
@@ -97,28 +99,34 @@ function ikFun(){
         questionList.splice(questionList.indexOf(orig),1)
         ques.innerHTML = questionList[0]
         socreNum.innerHTML = questionList.length
+        console.log(questionList)
         }else{
+            ikBtn.disabled = true
             testEnd()
             console.log('gameEnd')
                 
         }
     },1200)
         // delete item
+    // this.disabled = false
         
 }
 function idkFun(){
-    
-    if(ansList[ques.innerHTML]!== undefined){
+    // this.disabled = true
+    if(ansList[ques.innerHTML]!= undefined){
         failVoc.innerHTML+= ques.innerHTML+" "+ansList[ques.innerHTML]+"\n"
         }
     if(parseInt(questionList.length)>1){
         questionList.splice(questionList.indexOf(ques.innerHTML),1)
         ques.innerHTML = questionList[0]
         socreNum.innerHTML = questionList.length
+        console.log(questionList)
         }else{
+            idkBtn.disabled = true
             testEnd()
             console.log('gameEnd')
         }
+    // this.disabled = false
     
     
 }
