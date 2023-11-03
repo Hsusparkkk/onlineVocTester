@@ -87,7 +87,7 @@ function testEnd(){
     failVoc.innerHTML+="==========END==========\nTo restart?\nPress the Generate Button"
 }
 // idk and ik button function definition============================================
-ikFun =()=>{
+function ikFun(){
         let orig = ques.innerHTML
         if(ansList[ques.innerHTML]!= undefined){
         ques.innerHTML += " "+ansList[ques.innerHTML]
@@ -106,7 +106,7 @@ ikFun =()=>{
         // delete item
         
 }
-idkFun = ()=>{
+function idkFun(){
     
     if(ansList[ques.innerHTML]!== undefined){
         failVoc.innerHTML+= ques.innerHTML+" "+ansList[ques.innerHTML]+"\n"
