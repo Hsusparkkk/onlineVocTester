@@ -123,9 +123,9 @@ idkFun = ()=>{
     
 }
 //main body===========================================================================
-btnCheck.addEventListener("click",getObj)
-ikBtn.addEventListener("click",ikFun)
-idkBtn.addEventListener("click",idkFun)
+// btnCheck.addEventListener("click",getObj)
+// ikBtn.addEventListener("click",ikFun)
+// idkBtn.addEventListener("click",idkFun)
 //Test block====================================================================
 if(debug){
 

@@ -78,14 +78,14 @@
             <option value="30">30</option>
         </select>
         <br>
-        <button id="getCheckBtn" type="button">Generate</button>
+        <button id="getCheckBtn" type="button" onclick="getObj()">Generate</button>
     </section>
 </form>
 <hr>
 <div id="score"><h3 id="scoreNum">amount</h3></div>
 <div id="ques">question</div>
 <section id="output">
-    <button id="ikBtn">Know</button> <button id="idkBtn">Don't Know</button>
+    <button id="ikBtn" onclick="ikFun()">Know</button> <button id="idkBtn" onclick="idkFun()">Don't Know</button>
 </section>
 <section id="failSection">
     <textarea id="failVoc" cols="20" rows="30" readonly>Press the Generate button twice if the test doesn't appear to start.</textarea>
